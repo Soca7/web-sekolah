@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container-judul {
+  margin-top: 20px;
+}
+
+.jumbotron {
+  background-image: url("../img/galeri-2.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 60vh;
+  color: #15477a;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.container-judul-jurusan {
+  background-color: rgba(20, 20, 19, 0.479);
+  width: 50%;
+  margin: auto;
+  border-radius: 15px;
+  color: white;
+}
+
+.gambar {
+  min-height: 120px;
+  background-color: #fff;
+  padding: 20px;
+}
+
+.row-gambar {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.gambar .row-gambar img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.gambar2 {
+  margin-bottom: 20px;
+  min-height: 60vh;
+}
+
+.row-gambar2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  padding: 10%;
+}
+
+.gambar2 .row-gambar2 img {
+  width: 500px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+  .jumbotron {
+    height: 80vh;
+    padding: 15px;
+  }
+
+  .container-judul-jurusan {
+    width: 80%;
+    padding: 10px;
+  }
+
+  .container-judul-jurusan h1 {
+    font-size: 1.2rem;
+  }
+
+  .row-gambar {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px;
+  }
+
+  .row-gambar2 {
+    grid-template-columns: 1fr;
+  }
+
+  .gambar2 .row-gambar2 img {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .container-judul-jurusan {
+    width: 70%;
+    padding: 8px;
+  }
+
+  .row-gambar {
+    grid-template-columns: 1fr;
+  }
+}
